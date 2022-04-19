@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title> Baiken Frame Data </title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.6">
+  <script src="./script.js" defer></script>
+  <style>
+    .header {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .header-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 500px;
+    }
+
+    .page {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      justify-content: center;
+      align-items: baseline;
+    }
+
+    .box {
+      text-align: center;
+      width: 25%;
+      height: 550px;
+      font-size: 20px;
+      border-color: black;
+      border-width: 5px;
+      border-style: solid;
+      margin: 10px;
+    }
+
+    .wide-box {
+      text-align: center;
+      width: 50%;
+      height: 500px;
+      font-size: 20px;
+      border-color: black;
+      border-width: 5px;
+      border-style: solid;
+      margin: 10px;
+    }
+
+    .tablinks {
+      margin: auto;
+      height: 50px;
+      width: 100px;
+    }
+
+    .tabcontent_active {
+      display: none;
+      padding: 6px 12px;
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+    }
+
+    .image {
+      width: 300px;
+      height: 300px;
+    }
+
+    .wide-image {
+      width: 370px;
+      height: 250px;
+    }
+
+    .full-image {
+      width: 100%;
+      height: 250px;
+    }
+
+    .double-image {
+      width: 180px;
+      height: 250px;
+    }
+
+    .plus {
+      background: chartreuse;
+    }
+
+    .neg {
+      background: crimson;
+    }
+
+    .footer {
+      background-color: black;
+      margin-top: 100px;
+      bottom: 0px;
+      height: 50px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<header>
+
+  <a href="https://chapterblvck.github.io/XrdFD/"> Home </a>
+
+  <h1 class="header"> <a style="color: crimson;">B</a>aiken </h1>
+  <img class="header-image" src="./images/Baiken/Portrait.png">
+
+</header>
+
+<main>
+
+
+  <div class="box-container">
+
+    <div class="box">
+      <div>5P</div>
+      <hr>
+      <!-- Tabs -->
+      <div class="tab">
+        <script>
+          function openTab(evt, event) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(event).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+        </script>
+        <button class="tablinks" onclick="openTab(event, '5P')" id="defaultOpen">Image</button>
+        <button class="tablinks" onclick="openTab(event, '5P_Hitbox')">Hitbox</button>
+      </div>
+      <!-- Tab content -->
+      <div id="5P" class="tabcontent">
+        <img class="image" src="/images/Baiken/5P.png" alt="baiken 5P">
+      </div>
+
+      <div id="5P_Hitbox" class="tabcontent">
+        <img class="image" src="/images/Baiken/5P_Hitbox.png" alt="5P Hitbox">
+      </div>
+      <!--move data¬-->
+      <hr>
+      Startup:
+      <br>
+      On Black:
+      <hr>
+      Damage:
+    </div>
+
+    <div class="box">
+      <div>5K</div>
+      <hr>
+      <!-- Tabs -->
+      <div class="tab">
+        <script>
+          function openTab(evt, event) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(event).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+        </script>
+        <button class="tablinks" onclick="openTab(event, '5K')" id="defaultOpen">Image</button>
+        <button class="tablinks" onclick="openTab(event, '5K_Hitbox')">Hitbox</button>
+      </div>
+      <!-- Tab content -->
+      <div id="5K" class="tabcontent_active">
+        <img class="wide-image" src="/images/Baiken/5K.png" alt="baiken 5K">
+      </div>
+
+      <div id="5K_Hitbox" class="tabcontent">
+        <img class="wide-image" src="/images/Baiken/5K_Hitbox.png" alt="5K Hitbox">
+      </div>
+      <!--move data¬-->
+      <hr>
+      Startup:
+      <br>
+      On Black:
+      <hr>
+      Damage:
+    </div>
+
+  </div>
+
+
+
+</main>
+
+</html>
